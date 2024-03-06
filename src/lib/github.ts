@@ -6,6 +6,8 @@ export interface Repo {
     description: string,
     full_name: string,
     html_url: string,
+    homepage?: string,
+    language: string,
     pushed_at: Date
 }
 
@@ -22,12 +24,16 @@ export const getRepos = async (): Promise<Repo[]> => {
 
     if (!repos) return [];
 
+    // console.log(repos[4]);
+
     return repos.map(repo => ({
         id: repo.id,
-        name: repo.name,
-        html_url: repo.html_url,
         full_name: repo.full_name,
+        name: repo.name,
         description: repo.description,
+        homepage: repo.homepage,
+        html_url: repo.html_url,
+        language: repo.language.toLowerCase(),
         pushed_at: new Date(repo.pushed_at)
     })).sort((a, b) => (b.pushed_at.getTime() - a.pushed_at.getTime()));
 }
