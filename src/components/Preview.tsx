@@ -1,12 +1,14 @@
+"use client";
 
 export interface PreviewProps {
     url: string;
+    name: string;
 }
 
-export default ({ url }: PreviewProps) => {
-    return (
-        <img 
-            className="rounded-lg"
-            src={`https://preview.nstruck.dev/api/capture?width=1920&height=1080&url=${url}`} />
+export default ({ name, url }: PreviewProps) => {
+    return (name &&
+        <a href={url} target="_blank">
+            <img className="rounded-lg transition-transform ease-in-out hover:scale-105" src={`/preview/${name}.png`} />
+        </a>
     )
 }
