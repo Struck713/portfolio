@@ -7,7 +7,7 @@ import { Icon, IconGithub, IconLinkedIn } from "./Icons"
 interface IconButtonProps { url: string, icon: ReactElement, text: string }
 const IconButton = ({ url, icon, text }: IconButtonProps) => {
     return (
-        <Button href={url} target="_blank" className="flex flex-row gap-1">
+        <Button href={url} target="_blank" className="flex flex-row gap-2">
             <Icon icon={icon} />
             <p>{text}</p>
         </Button>
