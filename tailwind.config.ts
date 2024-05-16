@@ -13,7 +13,8 @@ const config: Config = {
         current: 'currentColor',
         primary: '#BCAA99',
         secondary: '#88665D',
-        other: '#C2B97F',
+        sage: '#C2B97F',
+        cream: '#F2F7F2',
         magenta: '#8E5572'
       }
     }

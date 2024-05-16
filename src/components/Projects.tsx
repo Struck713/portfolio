@@ -39,10 +39,9 @@ export const Project = ({ name, full_name, description, language, homepage, html
 export default () => {
     return (
         <div id="projects" className="flex flex-col gap-2 h-full w-full pb-20">
-            <h1 className="text-3xl font-bold">Projects</h1>
-            <div className="flex gap-2">
-                <p>Here are some of the project's I've worked on. You can click the</p><Icon icon={<IconGithub />} /><p>to view the project's repository on Github.</p>
-                <p>All of my projects are written in</p>
+            <h1 className="text-3xl font-bold text-cream">Projects</h1>
+            <div className="text-cream">
+                <p>Here are some of the project's I've worked on. You can click the <Icon className="inline-flex align-middle px-1" icon={<IconGithub />} /> to view the project's repository on Github. There are language badges next to each repo.</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                 {projects.map(repo => <Project key={repo.full_name} {...repo} />)}
