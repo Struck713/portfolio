@@ -13,7 +13,7 @@ export const Icon = ({ className, icon, ...props }: IconProps) => {
         );
     }
     // if the icon is not clickable, wrapp it in a self-center tag
-    return <div className={`self-center ${className}`} >{spannedIcon}</div>;
+    return <div className={`self-center ${className ?? ""}`} >{spannedIcon}</div>;
 }
 
 export type IconLanguages = "typescript" | "javascript" | "java" | "c++" | "rust";
@@ -27,11 +27,11 @@ export const getIconByLanguage = (language: IconLanguages) => {
     }
 }
 
-const IconTypeScript = () => <img alt="TypeScript logo" title="TypeScript logo" src="/icons/typescript.svg" />;
-const IconJavaScript = () => <img alt="JavaScript logo" title="JavaScript logo" src="/icons/javascript.svg" />;
-const IconJava = () => <img alt="Java logo" title="Java logo" src="/icons/java.svg" />;
+const IconTypeScript = () => <img alt="TypeScript logo" title="TypeScript project" src="/icons/typescript.svg" />;
+const IconJavaScript = () => <img alt="JavaScript logo" title="JavaScript project" src="/icons/javascript.svg" />;
+const IconJava = () => <img alt="Java logo" title="Java project" src="/icons/java.svg" />;
 const IconCPlusPlus = () => <img alt="C++ logo" src="/icons/cplusplus.svg" />;
-const IconRust = () => <img alt="Rust logo" title="Rust logo" src="/icons/rust.svg" />;
+const IconRust = () => <img alt="Rust logo" title="Rust project" src="/icons/rust.svg" />;
 
-export const IconLinkedIn = () => <img alt="LinkedIn logo" title="LinkedIn logo" src="/icons/linkedin.svg" />;
-export const IconGithub = () => <img alt="Github LinkedIn logo" title="Github logo" src="/icons/github.svg" />;
+export const IconLinkedIn = () => <img alt="LinkedIn" title="LinkedIn logo" src="/icons/linkedin.svg" />;
+export const IconGithub = () => <img alt="Github" title="Github logo" src="/icons/github.svg" />;

@@ -3,7 +3,7 @@ import Projects from "@/components/Projects";
 
 export default () => {
   return (
-    <main className="bg-gray-200 px-60">
+    <main className="bg-[url('/background.svg')] bg-contain bg-no-repeat bg-secondary px-60">
       <div className="min-h-screen justify-center">
         <Header />
         <Projects />
