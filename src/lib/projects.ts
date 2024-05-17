@@ -53,7 +53,7 @@ export default <Repo[]>[
     {
         full_name: "Struck713/aoc2023",
         name: "aoc2023",
-        description: "My solution for Advent of Code 2023",
+        description: "I had wanted to use [Rust](https://www.rust-lang.org/) for awhile, so I thought this would be a good place to start. I implemented around half of the [2023 Advent of Code](https://adventofcode.com/2023) problems.",
         html_url: "https://github.com/Struck713/aoc2023",
         language: "rust",
         pushed_at: new Date("2023-12-22T03:39:59.000Z")
@@ -61,7 +61,7 @@ export default <Repo[]>[
     {
         full_name: "Struck713/nonapus-adventures",
         name: "nonapus-adventures",
-        description: "A game designed using JavaScript and p5.js for Dr. Delozier's Software Engineering class at Kent State",
+        description: "A game designed using JavaScript and p5.js for Dr. Delozier's Software Engineering class at Kent State.",
         html_url: "https://github.com/Struck713/nonapus-adventures",
         language: "javascript",
         pushed_at: new Date("2023-10-25T03:30:55.000Z")
@@ -78,7 +78,7 @@ export default <Repo[]>[
     {
         full_name: "Struck713/syslog-agent",
         name: "syslog-agent",
-        description: "An open-source agent that sends syslog messages from the Windows Event Log",
+        description: "An open-source agent that sends syslog messages from the Windows Event Log.",
         html_url: "https://github.com/Struck713/syslog-agent",
         language: "java",
         pushed_at: new Date("2023-01-13T21:14:10.000Z")
