@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Experience from "@/sections/Experience";
-import Projects from "@/sections/Projects";
+import Experience from "@/components/sections/Experience";
+import Projects from "@/components/sections/Projects";
 
 export default () => {
   return (
