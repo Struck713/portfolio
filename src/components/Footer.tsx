@@ -1,4 +1,4 @@
-import { URL } from "@/lib/config";
+import { URL } from "@/app/config";
 import { Icon, IconGithub, IconLinkedIn } from "./Icons";
 
 export default () => {

@@ -1,4 +1,4 @@
-import { URL, projects } from "@/lib/config";
+import { URL, projects } from "@/app/config";
 import { ReactNode } from "react";
 import { Icon, IconGithub, IconLanguages, getIconByLanguage } from "../Icons";
 import Preview from "../Preview";

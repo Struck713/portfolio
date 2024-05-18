@@ -3,7 +3,7 @@
 import { ReactElement } from "react"
 import { Button } from "./Button"
 import { Icon, IconGithub, IconLinkedIn } from "./Icons"
-import { URL } from "@/lib/config";
+import { URL } from "@/app/config";
 
 interface IconButtonProps { url: string, icon: ReactElement, text: string }
 const IconButton = ({ url, icon, text }: IconButtonProps) => {

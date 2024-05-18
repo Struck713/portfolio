@@ -1,4 +1,4 @@
-import { DATE_FORMAT, experience } from "@/lib/config";
+import { DATE_FORMAT, experience } from "@/app/config";
 import { Utils } from "@/lib/util";
 import moment from "moment";
 import { ReactNode } from "react";
