@@ -1,8 +1,9 @@
 "use client";
 
 import { ReactElement } from "react"
-import Button from "./Button"
+import { Button } from "./Button"
 import { Icon, IconGithub, IconLinkedIn } from "./Icons"
+import { URL } from "@/lib/config";
 
 interface IconButtonProps { url: string, icon: ReactElement, text: string }
 const IconButton = ({ url, icon, text }: IconButtonProps) => {
@@ -27,8 +28,8 @@ export default () => {
                     <p>Hobbyist</p>
                 </div>
                 <div className="flex flex-row justify-evenly">
-                    <IconButton url="https://github.com/Struck713" icon={<IconGithub />} text="Struck713" />
-                    <IconButton url="https://www.linkedin.com/in/noah-struck/" icon={<IconLinkedIn />} text="Noah Struck" />
+                    <IconButton url={URL.Github} icon={<IconGithub />} text="Struck713" />
+                    <IconButton url={URL.LinkedIn} icon={<IconLinkedIn />} text="Noah Struck" />
                 </div>
             </div>
         </div>
