@@ -4,12 +4,11 @@ import { Experience } from "@/components/sections/Experience";
 import { Project } from "@/components/sections/Projects";
 import Image from "next/image";
 
+export const DATE_FORMAT = "MM/YYYY";
 export enum URL {
     Github = "https://github.com/Struck713",
     LinkedIn = "https://www.linkedin.com/in/noah-struck/"
 };
-
-export const DATE_FORMAT = "MM/YYYY";
 
 export const experience: Experience[] = [
     {
@@ -17,21 +16,21 @@ export const experience: Experience[] = [
         title: "Software Co-op",
         logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/rovisys.svg`} />,
         description: <span>I will eventually write about skills I gained at RoviSys, but currently I haven't really worked there long enough to have anything to write about.</span>,
-        skills: ["typescript"],
+        skills: [],
         url: "https://www.rovisys.com",
         start: "2024-05-13"
     },
     {
         name: "Kent State University",
         title: "Tutor",
-        logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/ksu.svg`} />,
+        logo: <Image width={573.49335} height={167.41333} className="w-32" alt={"RoviSys"} src={`/experience/ksu.svg`} />,
         description: (
             <>
                 <p>Tutored students on Kent State CS curriculum.</p>
             </>
         ),
-        skills: ["typescript"],
-        url: "https://www.linkedin.com/company/rosc/",
+        skills: [],
+        url: "https://www.kent.edu/cs",
         start: "2023-09-26"
     }
 ]
@@ -41,7 +40,7 @@ export const projects: Project[] = [
         name: "portfolio",
         description: (
             <span>
-                intro This website, which is built using React (Next.js to be more specific) and Tailwind. 
+                This website, which is built using React (Next.js to be more specific) and Tailwind. 
                 All of the styling and design was done by yours truly.
             </span>
         ),

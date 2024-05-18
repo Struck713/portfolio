@@ -16,8 +16,6 @@ export interface Experience {
     end?: string
 }
 
-// love this function
-
 const getDateRange = (start: string, end?: string) => {
     const startMoment = moment(start);
     const endMoment = end ? moment(end) : moment();
