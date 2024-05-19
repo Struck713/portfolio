@@ -6,7 +6,7 @@ import Projects from "@/components/sections/Projects";
 export default () => {
   return (
     <main className="bg-secondary">
-      <div className="min-h-screen justify-center">
+      <div className="justify-center">
         <Header />
         <div className="flex flex-col gap-12">
           <Experience />
