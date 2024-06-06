@@ -1,3 +1,5 @@
+"use client";
+
 import { DATE_FORMAT, experience } from "@/app/config";
 import { Utils } from "@/lib/util";
 import moment from "moment";
@@ -15,16 +17,16 @@ export interface Experience {
     start: string,
     end?: string
 }
-
-const getDateRange = (start: string, end?: string) => {
-    const startMoment = moment(start);
-    const endMoment = end ? moment(end) : moment();
-    const endDate = end ? endMoment.format(DATE_FORMAT) : "Present";
-    const startDate = startMoment.format(DATE_FORMAT);
-    return <span>{startDate} - {endDate} &#x2022; {Utils.latestTime(startMoment, endMoment)}</span>;
-}
-
 export const Experience = ({ title, logo, description, url, start, end }: Experience) => {
+
+    const getDateRange = (start: string, end?: string) => {
+        const startMoment = moment(start);
+        const endMoment = end ? moment(end) : moment();
+        const endDate = end ? endMoment.format(DATE_FORMAT) : "Present";
+        const startDate = startMoment.format(DATE_FORMAT);
+        return <span>{startDate} - {endDate} &#x2022; {Utils.latestTime(startMoment, endMoment)}</span>;
+    }
+
     return (
         <div className={`px-10 py-5 bg-primary rounded-lg drop-shadow-md`}>
             <div className="flex flex-col gap-2">
@@ -42,7 +44,6 @@ export const Experience = ({ title, logo, description, url, start, end }: Experi
 }
 
 export default () => {
-
     return (
         <Section name="Experience">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
