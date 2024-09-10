@@ -25,7 +25,7 @@ export default () => {
                     <p className="self-center text-xs">|</p>
                     <p>Software Engineer</p>
                     <p className="self-center text-xs">|</p>
-                    <p>Hobbyist</p>
+                    <p>Enthusiast</p>
                 </div>
                 <div className="flex flex-row justify-evenly">
                     <IconButton url={URL.Github} icon={<IconGithub />} text="Struck713" />
