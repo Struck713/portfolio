@@ -26,7 +26,12 @@ export const experience: Experience[] = [
         logo: <Image width={573.49335} height={167.41333} className="w-32" alt={"RoviSys"} src={`/experience/ksu.svg`} />,
         description: (
             <>
-                <p>Tutored students on Kent State CS curriculum.</p>
+                <p>At this position, I tutored students on the Kent State CS curriculum, this includes:</p>
+                <ul className="list-inside list-disc">
+                    <li><Link href="https://kent.cobalt.lol/course/CS13011">CS IA/IB</Link></li>
+                    <li><Link href="https://kent.cobalt.lol/course/CS23001">CS 2</Link></li>
+                    <li><Link href="https://kent.cobalt.lol/course/CS44001">CS 3</Link></li>
+                </ul>
             </>
         ),
         skills: [],
