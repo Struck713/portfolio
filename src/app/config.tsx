@@ -18,7 +18,8 @@ export const experience: Experience[] = [
         description: <span>I will eventually write about skills I gained at RoviSys, but currently I haven't really worked there long enough to have anything to write about.</span>,
         skills: [],
         url: "https://www.rovisys.com",
-        start: "2024-05-13"
+        start: "2024-05-13",
+        end: "2024-08-13"
     },
     {
         name: "Kent State University",
