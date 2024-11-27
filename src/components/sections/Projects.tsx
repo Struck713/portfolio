@@ -9,7 +9,7 @@ export interface Project {
     description: string | ReactNode,
     html_url: string,
     homepage?: string,
-    language: string,
+    language: IconLanguages,
 }
 
 export const Project = ({ name, description, language, homepage, html_url }: Project) => {
@@ -35,7 +35,7 @@ export const Project = ({ name, description, language, homepage, html_url }: Pro
 export default () => {
 
     const description = <p>
-        Here are some of the project's I've worked on. You can click the<Icon href={URL.Github} className="inline-flex align-middle px-2" icon={<IconGithub />} /> 
+        Here are some of the project's I've worked on. You can click the<Icon href={URL.Github} className="inline-flex align-middle px-2" icon={<IconGithub />} />
         to view the project's repository on Github. There are language badges next to each repo.
     </p>;
 

@@ -27,7 +27,7 @@ export const IconButton = ({ url, icon, text }: IconButtonProps) => {
     )
 }
 
-export type IconLanguages = "typescript" | "javascript" | "java" | "c++" | "rust";
+export type IconLanguages = "typescript" | "javascript" | "java" | "c++" | "rust" | "go";
 export const getIconByLanguage = (language: IconLanguages) => {
     switch (language) {
         case "typescript": return <IconTypeScript />;
@@ -35,6 +35,7 @@ export const getIconByLanguage = (language: IconLanguages) => {
         case "java": return <IconJava />;
         case "c++": return <IconCPlusPlus />;
         case "rust": return <IconRust />
+        case "go": return <IconGo />
     }
 }
 
@@ -43,6 +44,8 @@ const IconJavaScript = () => <img alt="JavaScript logo" title="JavaScript projec
 const IconJava = () => <img alt="Java logo" title="Java project" src="/icons/java.svg" />;
 const IconCPlusPlus = () => <img alt="C++ logo" src="/icons/cplusplus.svg" />;
 const IconRust = () => <img alt="Rust logo" title="Rust project" src="/icons/rust.svg" />;
+const IconGo = () => <img alt="Go logo" title="Go project" src="/icons/go.svg" />;
+
 
 export const IconLinkedIn = () => <img alt="LinkedIn" title="LinkedIn logo" src="/icons/linkedin.svg" />;
 export const IconGithub = () => <img alt="Github" title="Github logo" src="/icons/github.svg" />;

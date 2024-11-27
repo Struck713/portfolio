@@ -46,7 +46,7 @@ export const projects: Project[] = [
         name: "portfolio",
         description: (
             <span>
-                This website, which is built using React (Next.js to be more specific) and Tailwind. 
+                This website, which is built using React (Next.js to be more specific) and Tailwind.
                 All of the styling and design was done by yours truly.
             </span>
         ),
@@ -57,8 +57,8 @@ export const projects: Project[] = [
         name: "music-bot",
         description: (
             <span>
-                A lot of the original Discord music bots slowly have been taken offline. I wanted to make 
-                my own so that I could have a music bot without worrying about it getting taken offline. 
+                A lot of the original Discord music bots slowly have been taken offline. I wanted to make
+                my own so that I could have a music bot without worrying about it getting taken offline.
                 This project does exactly that.
             </span>
         ),
@@ -88,6 +88,17 @@ export const projects: Project[] = [
         ),
         html_url: "https://github.com/Struck713/eagle",
         language: "typescript",
+    },
+    {
+        name: "tunnels",
+        description: (
+            <span>
+                A tunneling application, similar to <Link href="https://github.com/cloudflare/cloudflared">cloudflared</Link>. Allows you to create your own proxy to act as a broker between the Internet
+                and your services. Useful for on-the-fly reverse proxying your own services. I mostly created this project because I wanted to use Go to do networking and concurrency.
+            </span>
+        ),
+        html_url: "https://github.com/Struck713/tunnels",
+        language: "go",
     },
     {
         name: "mobutil",
@@ -134,7 +145,7 @@ export const projects: Project[] = [
         name: "gamma-gambling",
         description: (
             <span>
-                For my Intro to Database Design class, I wanted to go above and beyond and make something really cool. 
+                For my Intro to Database Design class, I wanted to go above and beyond and make something really cool.
                 My group ended up created a full fledge gambling website with interactive games through websockets.
             </span>
         ),
@@ -146,7 +157,7 @@ export const projects: Project[] = [
         name: "syslog-agent",
         description: (
             <span>
-                There isn't really a good open source and easy-to-use solution to sending Windows Event Logs to a syslog server. 
+                There isn't really a good open source and easy-to-use solution to sending Windows Event Logs to a syslog server.
                 I designed this piece of software to accomplish that task.
             </span>
         ),
