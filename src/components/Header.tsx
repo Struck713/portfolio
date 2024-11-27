@@ -2,18 +2,8 @@
 
 import { ReactElement } from "react"
 import { Button } from "./Button"
-import { Icon, IconGithub, IconLinkedIn } from "./Icons"
+import { Icon, IconButton, IconGithub, IconLinkedIn } from "./Icons"
 import { URL } from "@/app/config";
-
-interface IconButtonProps { url: string, icon: ReactElement, text: string }
-const IconButton = ({ url, icon, text }: IconButtonProps) => {
-    return (
-        <Button href={url} target="_blank" className="flex flex-row gap-2">
-            <Icon icon={icon} />
-            <p>{text}</p>
-        </Button>
-    )
-}
 
 export default () => {
     return (

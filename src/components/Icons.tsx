@@ -1,4 +1,5 @@
 import { HTMLProps, ReactElement } from "react"
+import { Button } from "./Button";
 
 export type IconProps = HTMLProps<HTMLAnchorElement> & { icon: ReactElement };
 export const Icon = ({ className, icon, ...props }: IconProps) => {
@@ -14,6 +15,16 @@ export const Icon = ({ className, icon, ...props }: IconProps) => {
     }
     // if the icon is not clickable, wrapp it in a self-center tag
     return <div className={`self-center ${className ?? ""}`} >{spannedIcon}</div>;
+}
+
+interface IconButtonProps { url: string, icon: ReactElement, text: string }
+export const IconButton = ({ url, icon, text }: IconButtonProps) => {
+    return (
+        <Button href={url} target="_blank" className="flex flex-row gap-2">
+            <Icon icon={icon} />
+            <p>{text}</p>
+        </Button>
+    )
 }
 
 export type IconLanguages = "typescript" | "javascript" | "java" | "c++" | "rust";
