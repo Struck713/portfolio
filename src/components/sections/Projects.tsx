@@ -7,7 +7,7 @@ import Section from "./Section";
 export interface Project {
     name: string,
     description: string | ReactNode,
-    html_url: string,
+    html_url?: string,
     homepage?: string,
     language: IconLanguages,
 }
@@ -18,7 +18,7 @@ export const Project = ({ name, description, language, homepage, html_url }: Pro
             <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                     <div className="flex gap-2">
-                        <Icon href={html_url} target="_blank" icon={<IconGithub />} />
+                        {html_url && <Icon href={html_url} target="_blank" icon={<IconGithub />} />}
                         <p className="text-xl font-bold">{name}</p>
                     </div>
                     <Icon icon={getIconByLanguage(language as IconLanguages)} />

@@ -54,6 +54,23 @@ export const projects: Project[] = [
         language: "typescript",
     },
     {
+        name: "Keepr",
+        description: (
+            <span className="flex flex-col gap-2">
+              A web application that allows students to record and submit hours they have worked in an organization-specific work-study program.
+              Some of the key features I built are:
+              <ul className="list-inside list-disc">
+                  <li>Organizations on a client-by-client basis</li>
+                  <li>Editor for students to log and submit hours</li>
+                  <li>Dynamic PDF generation for work-study forms</li>
+              </ul>
+              This project is not open source. You can visit it by clicking the image below.
+            </span>
+        ),
+        homepage: "https://keepr.nstruck.dev",
+        language: "typescript",
+    },
+    {
         name: "music-bot",
         description: (
             <span>
