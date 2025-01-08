@@ -41,8 +41,12 @@ export default () => {
 
     return (
         <Section name="Projects" description={description}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-                {projects.map(repo => <Project key={repo.name} {...repo} />)}
+            <div className="gap-4 columns-1 md:columns-2 lg:columns-3">
+                {projects.map(repo => 
+                    <div key={repo.name} className="first:mt-0 mt-4">
+                        <Project {...repo} />
+                    </div>
+                )}
             </div>
         </Section>
     )
