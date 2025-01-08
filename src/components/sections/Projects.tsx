@@ -14,10 +14,10 @@ export interface Project {
 
 export const Project = ({ name, description, language, homepage, html_url }: Project) => {
     return (
-        <div className={`px-10 py-5 bg-primary rounded-lg drop-shadow-md ${homepage ? "row-span-2" : "row-span-1"}`}>
+        <div className="px-10 py-5 bg-primary rounded-lg drop-shadow-md">
             <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
-                    <div className="flex gap-2">
+                    <div className="flex flex-row gap-2">
                         {html_url && <Icon href={html_url} target="_blank" icon={<IconGithub />} />}
                         <p className="text-xl font-bold">{name}</p>
                     </div>
