@@ -56,7 +56,7 @@ export const Experience = ({ title, logo, description, url, start, end, skills }
 export default () => {
     return (
         <Section name="Experience">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-auto gap-4">
                 {experience.map(exper => <Experience key={exper.name} {...exper} />)}
             </div>
         </Section>

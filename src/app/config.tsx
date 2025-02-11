@@ -13,32 +13,45 @@ export enum URL {
 export const experience: Experience[] = [
     {
         name: "RoviSys",
-        title: "Software Co-op",
+        title: "Software Engineer I",
         logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/rovisys.svg`} />,
-        description: <span>I will eventually write about skills I gained at RoviSys, but currently I haven't really worked there long enough to have anything to write about.</span>,
-        skills: [],
-        url: "https://www.rovisys.com",
-        start: "2024-05-13",
-        end: "2024-08-13"
-    },
-    {
-        name: "Kent State University",
-        title: "Tutor",
-        logo: <Image width={573.49335} height={167.41333} className="w-32" alt={"RoviSys"} src={`/experience/ksu.svg`} />,
         description: (
             <>
-                <p>At this position, I tutored students on the Kent State CS curriculum, this includes:</p>
-                <ul className="list-inside list-disc">
-                    <li><Link href="https://kent.cobalt.lol/course/CS13011">CS IA/IB</Link></li>
-                    <li><Link href="https://kent.cobalt.lol/course/CS23001">CS 2</Link></li>
-                    <li><Link href="https://kent.cobalt.lol/course/CS44001">CS 3</Link></li>
-                </ul>
+                <p>Write code and building projects for our clients. At some point this will get more detailed but for now it's just this one liner!</p>
             </>
         ),
         skills: [],
-        url: "https://www.kent.edu/cs",
-        start: "2023-09-26"
-    }
+        url: "https://www.rovisys.com",
+        start: "2025-01-06"
+    },
+    // {
+    //     name: "RoviSys",
+    //     title: "Software Co-op",
+    //     logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/rovisys.svg`} />,
+    //     description: <span>I will eventually write about skills I gained at RoviSys, but currently I haven't really worked there long enough to have anything to write about.</span>,
+    //     skills: [],
+    //     url: "https://www.rovisys.com",
+    //     start: "2024-05-13",
+    //     end: "2024-08-13"
+    // },
+    // {
+    //     name: "Kent State University",
+    //     title: "Tutor",
+    //     logo: <Image width={573.49335} height={167.41333} className="w-32" alt={"RoviSys"} src={`/experience/ksu.svg`} />,
+    //     description: (
+    //         <>
+    //             <p>At this position, I tutored students on the Kent State CS curriculum, this includes:</p>
+    //             <ul className="list-inside list-disc">
+    //                 <li><Link href="https://kent.cobalt.lol/course/CS13011">CS IA/IB</Link></li>
+    //                 <li><Link href="https://kent.cobalt.lol/course/CS23001">CS 2</Link></li>
+    //                 <li><Link href="https://kent.cobalt.lol/course/CS44001">CS 3</Link></li>
+    //             </ul>
+    //         </>
+    //     ),
+    //     skills: [],
+    //     url: "https://www.kent.edu/cs",
+    //     start: "2023-09-26"
+    // }
 ]
 
 export const projects: Project[] = [
