@@ -13,16 +13,31 @@ export enum URL {
 export const experience: Experience[] = [
     {
         name: "RoviSys",
-        title: "Software Engineer I",
         logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/rovisys.svg`} />,
-        description: (
-            <>
-                <p>Write code and building projects for our clients. At some point this will get more detailed but for now it's just this one liner!</p>
-            </>
-        ),
-        skills: [],
+        positions: [
+            {
+                title: "Software Engineer I",
+                description: (
+                    <>
+                        <p>Writing code and building projects for our clients. At some point this will get more detailed but for now it's just this one liner!</p>
+                    </>
+                ),
+                skills: [],
+                start: "2025-01-06",
+            },
+            {
+                title: "Software Co-op",
+                description: (
+                    <>
+                        <p>I did a co-op here. I'll probably write about it later!</p>
+                    </>
+                ),
+                skills: [],
+                start: "2024-05-14",
+                end: "2024-08-14"
+            }
+        ],
         url: "https://www.rovisys.com",
-        start: "2025-01-06"
     },
     // {
     //     name: "RoviSys",
