@@ -55,7 +55,7 @@ export const Experience = ({ name, logo, positions, url }: Experience) => {
                                     <h3 className="text-lg font-bold">{title}</h3>
                                     <p className="text-xs">{getDateRange(start, end)}</p>
                                 </div>
-                                <p>{description}</p>
+                                {description}
                             </div>
                         </div>
                     )}
