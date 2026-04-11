@@ -16,26 +16,29 @@ export const experience: Experience[] = [
         logo: <Image width={436.7} height={73.7} className="w-32" alt={"RoviSys"} src={`/experience/rovisys.svg`} />,
         positions: [
             {
+                title: "Software Engineer II",
+                description: (
+                    <ul className="list-inside list-disc">
+                    </ul>
+                ),
+                skills: [],
+                start: "2026-03-01",
+            },
+            {
                 title: "Software Engineer I",
                 description: (
-                    <>
-                        <p>Writing code and building projects for our clients. At some point this will get more detailed but for now it's just this one liner!</p>
-                    </>
+                    <ul className="list-inside list-disc">
+                        <li>Improved DevEx with streamlined builds and testing</li>
+                        <li>Architected pipelines for improved project DevOps</li>
+                        <li>Assisted in the internal rollout of AI workflows for developers</li>
+                        <li>Designed and implemented high level solutions to solve client problems</li>
+                        <li>Introduced modern solutions to legacy code in internal applications</li>
+                    </ul>
                 ),
                 skills: [],
                 start: "2025-01-06",
+                end: "2026-03-01",
             },
-            {
-                title: "Software Co-op",
-                description: (
-                    <>
-                        <p>I did a co-op here. I'll probably write about it later!</p>
-                    </>
-                ),
-                skills: [],
-                start: "2024-05-14",
-                end: "2024-08-14"
-            }
         ],
         url: "https://www.rovisys.com",
     },
@@ -71,6 +74,25 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
     {
+        name: "ShowVault",
+        featured: true,
+        description: (
+            <span className="flex flex-col gap-2">
+              A web app for tracking progress in TV shows. Some of the features include:
+              <ul className="list-inside list-disc">
+                  <li>Social: Add friends and view their watch history</li>
+                  <li>Statistics: View how many hours you've logged watching shows</li>
+                  <li>Notifications: Add shows to your Watchlist and be notified of new episodes</li>
+              </ul>
+              I am insanely proud of this project and have been actively working on it since December 2025. 
+              There will probably be more features to come in the future.
+              <p className="mt-2">This project is not open source. You can visit it by clicking the image below.</p>
+            </span>
+        ),
+        homepage: "https://showvault.app",
+        language: "typescript",
+    },
+    {
         name: "portfolio",
         description: (
             <span>
@@ -83,6 +105,7 @@ export const projects: Project[] = [
     },
     {
         name: "Keepr",
+        featured: true,
         description: (
             <span className="flex flex-col gap-2">
               A web application that allows students to record and submit hours they have worked in an organization-specific work-study program.
@@ -111,30 +134,6 @@ export const projects: Project[] = [
         language: "typescript",
     },
     {
-        name: "image-to-ppm",
-        description: (
-            <span>
-                A simple Rust command line application that can take a PNG or JPG image and convert it to
-                it's raw format, PPM. You can find it on <Link href="https://crates.io/crates/image-to-ppm">crates.io</Link>.
-            </span>
-        ),
-        html_url: "https://github.com/Struck713/image-to-ppm",
-        language: "rust",
-
-    },
-    {
-        name: "eagle",
-        description: (
-            <span>
-                This tool is used to scrape Kent State course data.
-                This package is specifically used in Cobalt, found at <Link href="https://kent.cobalt.lol">https://kent.cobalt.lol</Link>.
-                It is a fork (and port) of <Link href="https://github.com/ilefa/husky">ilefa/husky</Link>.
-            </span>
-        ),
-        html_url: "https://github.com/Struck713/eagle",
-        language: "typescript",
-    },
-    {
         name: "tunnels",
         description: (
             <span>
@@ -158,6 +157,7 @@ export const projects: Project[] = [
     },
     {
         name: "where-to-eat",
+        featured: true,
         description: (
             <span>
                 There used to be a website that let you find places to eat near you that was really good, then
@@ -179,35 +179,6 @@ export const projects: Project[] = [
         ),
         html_url: "https://github.com/Struck713/aoc2023",
         language: "rust",
-    },
-    {
-        name: "nonapus-adventures",
-        description: "A game designed using JavaScript and p5.js for Dr. Delozier's Software Engineering class at Kent State.",
-        html_url: "https://github.com/Struck713/nonapus-adventures",
-        language: "javascript",
-    },
-    {
-        name: "gamma-gambling",
-        description: (
-            <span>
-                For my Intro to Database Design class, I wanted to go above and beyond and make something really cool.
-                My group ended up created a full fledge gambling website with interactive games through websockets.
-            </span>
-        ),
-        homepage: "https://gammagambling.com",
-        html_url: "https://github.com/Struck713/gamma-gambling",
-        language: "typescript",
-    },
-    {
-        name: "syslog-agent",
-        description: (
-            <span>
-                There isn't really a good open source and easy-to-use solution to sending Windows Event Logs to a syslog server.
-                I designed this piece of software to accomplish that task.
-            </span>
-        ),
-        html_url: "https://github.com/Struck713/syslog-agent",
-        language: "java",
     },
     {
         name: "PerWorldServer",
