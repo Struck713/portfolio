@@ -20,4 +20,17 @@ export namespace Utils {
         return latestTime;
     }
 
+    export const fullTimeForNumber = (val: number) => {
+        const duration = moment.duration(val);
+
+        const years = duration.years();
+        const months = duration.months();
+        
+        let latestTime = [];
+        if (years > 0) latestTime.push(pluralize(years, "year"));
+        if (months > 0) latestTime.push(pluralize(months, "month"));
+
+        return latestTime.join(", ");
+    }
+
 }

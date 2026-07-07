@@ -76,6 +76,7 @@ export const projects: Project[] = [
     {
         name: "ShowVault",
         featured: true,
+        tagline: "Track your progress through TV shows",
         description: (
             <span className="flex flex-col gap-2">
               A web app for tracking progress in TV shows. Some of the features include:
@@ -86,7 +87,7 @@ export const projects: Project[] = [
               </ul>
               I am insanely proud of this project and have been actively working on it since December 2025. 
               There will probably be more features to come in the future.
-              <p className="mt-2">This project is not open source. You can visit it by clicking the image below.</p>
+              <p className="mt-2">This project is not open source, but you can try it via the <b>Visit site</b> link below.</p>
             </span>
         ),
         homepage: "https://showvault.app",
@@ -94,6 +95,7 @@ export const projects: Project[] = [
     },
     {
         name: "portfolio",
+        tagline: "The site you're looking at right now",
         description: (
             <span>
                 This website, which is built using React (Next.js to be more specific) and Tailwind.
@@ -106,6 +108,7 @@ export const projects: Project[] = [
     {
         name: "Keepr",
         featured: true,
+        tagline: "Work-study hour logging for students",
         description: (
             <span className="flex flex-col gap-2">
               A web application that allows students to record and submit hours they have worked in an organization-specific work-study program.
@@ -115,7 +118,7 @@ export const projects: Project[] = [
                   <li>Editor for students to log and submit hours</li>
                   <li>Dynamic PDF generation for work-study forms</li>
               </ul>
-              This project is not open source. You can visit it by clicking the image below.
+              This project is not open source, but you can try it via the <b>Visit site</b> link below.
             </span>
         ),
         homepage: "https://keepr.nstruck.dev",
@@ -123,6 +126,7 @@ export const projects: Project[] = [
     },
     {
         name: "music-bot",
+        tagline: "A self-hosted Discord music bot",
         description: (
             <span>
                 A lot of the original Discord music bots slowly have been taken offline. I wanted to make
@@ -135,6 +139,7 @@ export const projects: Project[] = [
     },
     {
         name: "tunnels",
+        tagline: "Self-hosted reverse-proxy tunneling in Go",
         description: (
             <span>
                 A tunneling application, similar to <Link href="https://github.com/cloudflare/cloudflared">cloudflared</Link>. Allows you to create your own proxy to act as a broker between the Internet
@@ -146,6 +151,7 @@ export const projects: Project[] = [
     },
     {
         name: "mobutil",
+        tagline: "Custom entities for Minecraft server mods",
         description: (
             <span>
                 This is a library for server-side Minecraft mods. It uses Java reflection to inject code into the{" "}
@@ -158,6 +164,7 @@ export const projects: Project[] = [
     {
         name: "where-to-eat",
         featured: true,
+        tagline: "Find somewhere to eat nearby",
         description: (
             <span>
                 There used to be a website that let you find places to eat near you that was really good, then
@@ -171,6 +178,7 @@ export const projects: Project[] = [
     },
     {
         name: "aoc2023",
+        tagline: "Advent of Code 2023, solved in Rust",
         description: (
             <span>
                 I had wanted to use <Link href="https://www.rust-lang.org/">Rust</Link> for awhile, so I thought this would be a good place to start.
@@ -182,6 +190,7 @@ export const projects: Project[] = [
     },
     {
         name: "PerWorldServer",
+        tagline: "Per-world tab list & chat for Spigot",
         description:(
             <span>
                 Source code of the PerWorldServer plugin on <Link href="https://www.spigotmc.org/resources/perworldserver-per-world-tab-list-and-chat-1-8-8-1-18-1.23989/">Spigot</Link>.

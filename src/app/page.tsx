@@ -5,15 +5,13 @@ import Projects from "@/components/sections/Projects";
 
 export default () => {
   return (
-    <main className="bg-secondary">
-      <div className="justify-center">
+    <main className="min-h-screen">
+      <div className="mx-auto flex max-w-container flex-col gap-14 px-5 py-10 md:gap-20 md:py-16">
         <Header />
-        <div className="flex flex-col gap-12">
-          <Experience />
-          <Projects />
-        </div>
-        <Footer />
+        <Experience />
+        <Projects />
       </div>
+      <Footer />
     </main>
   );
 }

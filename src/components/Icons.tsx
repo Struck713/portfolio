@@ -39,6 +39,15 @@ export const getIconByLanguage = (language: IconLanguages) => {
     }
 }
 
+export const languageNames: Record<IconLanguages, string> = {
+    typescript: "TypeScript",
+    javascript: "JavaScript",
+    java: "Java",
+    "c++": "C++",
+    rust: "Rust",
+    go: "Go",
+};
+
 const IconTypeScript = () => <img alt="TypeScript logo" title="TypeScript project" src="/icons/typescript.svg" />;
 const IconJavaScript = () => <img alt="JavaScript logo" title="JavaScript project" src="/icons/javascript.svg" />;
 const IconJava = () => <img alt="Java logo" title="Java project" src="/icons/java.svg" />;

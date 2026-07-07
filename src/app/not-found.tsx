@@ -2,13 +2,12 @@ import { Button } from "@/components/Button";
 
 export default () => {
   return (
-    <main className="bg-primary">
-      <div className="min-h-screen justify-center">
-        <div className="flex flex-col h-screen justify-center items-center gap-2 bg-[url('/background.svg')] bg-cover">
-          <h1 className="text-3xl font-bold">Woah woah! That doesn't exist!</h1>
-          <Button href="/">Return to safety</Button>
-          <p className="p-10 text-xs">&#40;This error page needs some work&#41;</p>
-        </div>
+    <main className="min-h-screen">
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-5 text-center">
+        <p className="font-display text-6xl font-bold text-accent-ink">404</p>
+        <h1 className="font-display text-2xl font-bold">Woah woah! That doesn&apos;t exist!</h1>
+        <p className="max-w-sm text-muted">The page you&apos;re looking for wandered off. Let&apos;s get you back.</p>
+        <Button href="/">Return to safety</Button>
       </div>
     </main>
   );
