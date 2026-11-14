@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 
+export const revalidate = 86400;
+
 export default () => {
   return (
     <main className="min-h-screen">
